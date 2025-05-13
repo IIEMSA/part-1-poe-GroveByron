@@ -71,6 +71,7 @@ namespace EventEaseVenueBookingApp.Controllers
         {
             
 
+
             var blobServiceClient = new BlobServiceClient(connectionString);
             var containerClient = blobServiceClient.GetBlobContainerClient(containerName);
             var blobClient = containerClient.GetBlobClient(Guid.NewGuid() + Path.GetExtension(imageFile.FileName));
