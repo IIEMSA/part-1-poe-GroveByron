@@ -35,6 +35,7 @@ namespace EventEaseVenueBookingApp.Controllers
             {
                 _context.Add(events);
                 await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Event was created sucessfully.";
                 return RedirectToAction(nameof(Index));
             }
             ViewBag.Venues = new SelectList(_context.Venue, "VenueID", "VenueName", events.VenueID);
@@ -74,12 +75,27 @@ namespace EventEaseVenueBookingApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
+            var events = await _context.Event
+                .Include(e => e.Booking)
+                .FirstOrDefaultAsync(e => e.EventID == id);
 
-            var events = await _context.Event.FindAsync(id);
+            if (events == null)
+            {
+                return NotFound();
+            }
+
+            // Check if the event has any bookings
+            if (events.Booking.Any())
+            {
+                // Return the same view with an error message
+                ModelState.AddModelError(string.Empty, "You can't delete this event as it already has a booking.");
+                return View(events);
+            }
+
             _context.Event.Remove(events);
             await _context.SaveChangesAsync();
+            TempData["SuccessMessage"] = "Event was deleted successfully.";
             return RedirectToAction(nameof(Index));
-
         }
 
         private bool EventExists(int id)
@@ -112,6 +128,7 @@ namespace EventEaseVenueBookingApp.Controllers
                 {
                     _context.Update(events);
                     await _context.SaveChangesAsync();
+                    TempData["SuccessMessage"] = "Event was updated successfully.";
                     return RedirectToAction(nameof(Index));
                 }
                 catch (DbUpdateConcurrencyException)

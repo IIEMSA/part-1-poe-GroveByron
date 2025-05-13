@@ -14,10 +14,17 @@ namespace EventEaseVenueBookingApp.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            var booking = await _context.Booking.Include(b => b.Venue).Include(b => b.Event).ToListAsync();
-            return View(booking); 
+            var bookings = _context.Booking.Include(b => b.Venue).Include(b => b.Event).AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+            
+                bookings = bookings.Where(b => b.Venue.VenueName.Contains(searchString) || b.Event.EventName.Contains(searchString));
+
+            }
+            return View(await bookings.ToListAsync()); 
         }
 
         public IActionResult Create()
@@ -61,6 +68,7 @@ namespace EventEaseVenueBookingApp.Controllers
 
                 _context.Add(booking);
                 await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Booking was created sucessfully.";
                 return RedirectToAction(nameof(Index));
             }
 
@@ -116,6 +124,7 @@ namespace EventEaseVenueBookingApp.Controllers
             var booking = await _context.Booking.FindAsync(id);
             _context.Booking.Remove(booking);
             await _context.SaveChangesAsync();
+            TempData["SuccessMessage"] = "Booking was deleted successfully.";
             return RedirectToAction(nameof(Index));
 
         }
@@ -173,6 +182,7 @@ namespace EventEaseVenueBookingApp.Controllers
 
                     _context.Update(booking);
                     await _context.SaveChangesAsync();
+                    TempData["SuccessMessage"] = "Booking was updated successfully.";
 
                 }
 

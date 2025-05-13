@@ -2,7 +2,25 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Welcome to the Home Page of EventEase.</p>
+<div class="container mt-5">
+    <!-- Green Heading Block -->
+    <div class="text-center bg-success text-white p-4 rounded shadow mb-4">
+        <h1 class="fw-bold mb-0">Welcome to EventEase</h1>
+    </div>
+
+    <!-- Main Content Block -->
+    <div class="text-center border rounded shadow p-5 bg-light">
+        <p class="lead mb-4">Where creating, designing and booking events happen!</p>
+
+        <div class="d-flex justify-content-center gap-4">
+            <!-- Green Button -->
+            <a href="/Venue" class="btn btn-success btn-lg px-4 rounded-pill shadow-sm">Venues</a>
+
+            <!-- White Button with Green Text & Border -->
+            <a href="/Event" class="btn btn-outline-success btn-lg px-4 rounded-pill shadow-sm bg-white">Events</a>
+
+            <!-- Green Button -->
+            <a href="/Booking" class="btn btn-success btn-lg px-4 rounded-pill shadow-sm">Bookings</a>
+        </div>
+    </div>
 </div>

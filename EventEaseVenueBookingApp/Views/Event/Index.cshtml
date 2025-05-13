@@ -6,6 +6,16 @@
 
 <h1>Event</h1>
 
+@{
+    var successMessage = TempData["SuccessMessage"];
+    if (!string.IsNullOrEmpty(successMessage?.ToString()))
+    {
+        <div class="alert alert-success">
+            @successMessage
+        </div>
+    }
+}
+
 <p>
     <a asp-action="Create">Create New</a>
 </p>

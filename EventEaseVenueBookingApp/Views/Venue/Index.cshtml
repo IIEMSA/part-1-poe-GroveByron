@@ -6,6 +6,16 @@
 
 <h1>Venue</h1>
 
+@{
+    var successMessage = TempData["SuccessMessage"];
+    if (!string.IsNullOrEmpty(successMessage?.ToString()))
+    {
+        <div class="alert alert-success">
+            @successMessage
+        </div>
+    }
+}
+
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -25,7 +35,7 @@
                 @Html.DisplayNameFor(model => model.VenueCapacity)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ImageURL)
+                Venue Image
             </th>
             <th></th>
         </tr>
@@ -46,7 +56,14 @@
                 @Html.DisplayFor(modelItem => item.VenueCapacity)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ImageURL)
+                @if (!string.IsNullOrEmpty(item.ImageURL))
+                {
+                 <img src="@item.ImageURL" alt="Venue Image" width="100" height="100" style="object-fit:cover; border-radius:8px;" />
+                }
+                else
+                {
+                 <span>No Image</span>
+                }
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.VenueID">Update</a> |

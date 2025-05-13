@@ -6,6 +6,23 @@
 
 <h1>Booking</h1>
 
+<form asp-action="Index" method="get">
+ <div class="form-group">
+     <input type="text" name="searchString" class="form-control" placeholder="Search either VenueName or EventName"
+ </div>
+    <button type="submit" class="btn btn-primary mt-2">Search</button>
+</form>
+
+@{
+    var successMessage = TempData["SuccessMessage"];
+    if (!string.IsNullOrEmpty(successMessage?.ToString()))
+    {
+        <div class="alert alert-success">
+            @successMessage
+        </div>
+    }
+}
+
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -13,40 +30,40 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.BookingID)
+               BookingID
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.BookingDate)
+               BookingDate
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.VenueID)
+                VenueName
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.EventID)
+                EventName
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @foreach (var booking in Model)
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.BookingID)
+                    @booking.BookingID)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.BookingDate)
+                    @booking.BookingDate.ToString("yyyy-MM-dd")
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.VenueID)
+                    @booking.Venue?.VenueName
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.EventID)
+                    @booking.Event?.EventName
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.BookingID">Update</a> |
-                    <a asp-action="Details" asp-route-id="@item.BookingID">View</a> |
-                    <a asp-action="Delete" asp-route-id="@item.BookingID">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@booking.BookingID">Update</a> |
+                    <a asp-action="Details" asp-route-id="@booking.BookingID">View</a> |
+                    <a asp-action="Delete" asp-route-id="@booking.BookingID">Delete</a>
                 </td>
             </tr>
         }
