@@ -2,73 +2,101 @@
 
 @{
     ViewData["Title"] = "Event Information";
+
+    string selectedSearchType = ViewBag.SelectedSearchType ?? "";
+    string selectedVenueID = ViewBag.SelectedVenueID ?? "";
+    string selectedStartDate = ViewBag.SelectedStartDate ?? "";
+    string selectedEndDate = ViewBag.SelectedEndDate ?? "";
 }
 
 <h1>Event</h1>
 
-@{
-    var successMessage = TempData["SuccessMessage"];
-    if (!string.IsNullOrEmpty(successMessage?.ToString()))
-    {
-        <div class="alert alert-success">
-            @successMessage
-        </div>
-    }
+@if (!string.IsNullOrEmpty(TempData["SuccessMessage"] as string))
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
 }
 
+<form method="get" asp-action="Index" class="mb-3">
+    <div class="form-row align-items-center">
+        <div class="col-auto">
+            <label for="searchType" class="sr-only">Event Type</label>
+            <select id="searchType" name="searchType" class="form-control">
+                <option value="">All Event Types</option>
+                @foreach (var et in ViewBag.EventTypes as List<string>)
+                {
+                    <option value="@et" selected="@(selectedSearchType == et ? "selected" : null)">@et</option>
+                }
+            </select>
+        </div>
+
+        <div class="col-auto">
+            <label for="venueID" class="sr-only">Venue</label>
+            <select id="venueID" name="venueID" class="form-control">
+                <option value="">All Venues</option>
+                @foreach (var venue in ViewBag.Venues as SelectList)
+                {
+                    <option value="@venue.Value" selected="@(selectedVenueID == venue.Value ? "selected" : null)">@venue.Text</option>
+                }
+            </select>
+        </div>
+
+        <div class="col-auto">
+            <label for="startDate" class="sr-only">Start Date</label>
+            <input type="date" id="startDate" name="startDate" value="@selectedStartDate" class="form-control" />
+        </div>
+
+        <div class="col-auto">
+            <label for="endDate" class="sr-only">End Date</label>
+            <input type="date" id="endDate" name="endDate" value="@selectedEndDate" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-row mt-2">
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Filter</button>
+        </div>
+        <div class="col-auto">
+            <a href="@Url.Action("Index")" class="btn btn-secondary">Clear</a>
+        </div>
+    </div>
+</form>
+
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-success">Create New</a>
 </p>
-<table class="table">
+
+<table class="table table-striped">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.EventID)  
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EventName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EventDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EventEndDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EventDescription)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.VenueID)  
-            </th>
-            <th></th>
+            <th>@Html.DisplayNameFor(m => m.First().EventID)</th>
+            <th>@Html.DisplayNameFor(m => m.First().EventName)</th>
+            <th>@Html.DisplayNameFor(m => m.First().EventDate)</th>
+            <th>@Html.DisplayNameFor(m => m.First().EventEndDate)</th>
+            <th>@Html.DisplayNameFor(m => m.First().EventDescription)</th>
+            <th>Venue</th>
+            <th>Event Type</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+    @foreach (var item in Model)
+    {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.EventID)  
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EventName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EventDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EventEndDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EventDescription)
-            <td>
-                @Html.DisplayFor(modelItem => item.VenueID)  
-             </td>
+            <td>@item.EventID</td>
+            <td>@item.EventName</td>
+            <td>@item.EventDate.ToString("yyyy-MM-dd")</td>
+            <td>@item.EventEndDate.ToString("yyyy-MM-dd")</td>
+            <td>@item.EventDescription</td>
+            <td>@item.Venue?.VenueName</td>
+            <td>@item.EventType?.Name</td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.EventID">Update</a> |
                 <a asp-action="Details" asp-route-id="@item.EventID">View</a> |
                 <a asp-action="Delete" asp-route-id="@item.EventID">Delete</a>
             </td>
         </tr>
-}
+    }
     </tbody>
 </table>

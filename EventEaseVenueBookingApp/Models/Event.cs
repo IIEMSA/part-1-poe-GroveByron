@@ -1,4 +1,6 @@
-﻿namespace EventEaseVenueBookingApp.Models
+﻿using System.Diagnostics;
+
+namespace EventEaseVenueBookingApp.Models
 {
     public class Event
     {
@@ -7,8 +9,13 @@
         public DateOnly EventDate { get; set; }
         public DateOnly EventEndDate { get; set; }
         public string EventDescription { get; set; } = "";
-        public int VenueID { get; set; }  
-        public Venue? Venue { get; set; } 
+
+        public int VenueID { get; set; }
+        public Venue? Venue { get; set; }
+
+        public int? EventTypeID { get; set; }
+        public EventType? EventType { get; set; }
+
         public List<Booking> Booking { get; set; } = new();
     }
 }

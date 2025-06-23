@@ -7,16 +7,32 @@
       "RelativeMoniker": "D:0:0:{BFDCDEF3-3640-41D0-B451-D42303A7CE8E}|EventEaseVenueBookingApp.csproj|solutionrelative:controllers\\venuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BFDCDEF3-3640-41D0-B451-D42303A7CE8E}|EventEaseVenueBookingApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-grovebyron\\eventeasevenuebookingapp\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCDEF3-3640-41D0-B451-D42303A7CE8E}|EventEaseVenueBookingApp.csproj|solutionrelative:models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCDEF3-3640-41D0-B451-D42303A7CE8E}|EventEaseVenueBookingApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-grovebyron\\eventeasevenuebookingapp\\views\\event\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BFDCDEF3-3640-41D0-B451-D42303A7CE8E}|EventEaseVenueBookingApp.csproj|solutionrelative:views\\event\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BFDCDEF3-3640-41D0-B451-D42303A7CE8E}|EventEaseVenueBookingApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-grovebyron\\eventeasevenuebookingapp\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFDCDEF3-3640-41D0-B451-D42303A7CE8E}|EventEaseVenueBookingApp.csproj|solutionrelative:controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFDCDEF3-3640-41D0-B451-D42303A7CE8E}|EventEaseVenueBookingApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-grovebyron\\eventeasevenuebookingapp\\views\\venue\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BFDCDEF3-3640-41D0-B451-D42303A7CE8E}|EventEaseVenueBookingApp.csproj|solutionrelative:views\\venue\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BFDCDEF3-3640-41D0-B451-D42303A7CE8E}|EventEaseVenueBookingApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-grovebyron\\eventeasevenuebookingapp\\views\\event\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BFDCDEF3-3640-41D0-B451-D42303A7CE8E}|EventEaseVenueBookingApp.csproj|solutionrelative:views\\event\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFDCDEF3-3640-41D0-B451-D42303A7CE8E}|EventEaseVenueBookingApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-grovebyron\\eventeasevenuebookingapp\\models\\venue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFDCDEF3-3640-41D0-B451-D42303A7CE8E}|EventEaseVenueBookingApp.csproj|solutionrelative:models\\venue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BFDCDEF3-3640-41D0-B451-D42303A7CE8E}|EventEaseVenueBookingApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-grovebyron\\eventeasevenuebookingapp\\views\\event\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BFDCDEF3-3640-41D0-B451-D42303A7CE8E}|EventEaseVenueBookingApp.csproj|solutionrelative:views\\event\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCDEF3-3640-41D0-B451-D42303A7CE8E}|EventEaseVenueBookingApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-grovebyron\\eventeasevenuebookingapp\\models\\venuebookingdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCDEF3-3640-41D0-B451-D42303A7CE8E}|EventEaseVenueBookingApp.csproj|solutionrelative:models\\venuebookingdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDCDEF3-3640-41D0-B451-D42303A7CE8E}|EventEaseVenueBookingApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-grovebyron\\eventeasevenuebookingapp\\models\\eventtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDCDEF3-3640-41D0-B451-D42303A7CE8E}|EventEaseVenueBookingApp.csproj|solutionrelative:models\\eventtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,32 +42,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EventController.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Controllers\\EventController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EventController.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Controllers\\EventController.cs",
-              "RelativeToolTip": "Controllers\\EventController.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T11:40:55.128Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Venue.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Models\\Venue.cs",
-              "RelativeDocumentMoniker": "Models\\Venue.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Models\\Venue.cs",
-              "RelativeToolTip": "Models\\Venue.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T22:28:50.089Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -60,22 +52,97 @@
               "RelativeDocumentMoniker": "Controllers\\VenueController.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Controllers\\VenueController.cs",
               "RelativeToolTip": "Controllers\\VenueController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAYwEgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAcwEgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T22:23:26.014Z",
+              "WhenOpened": "2025-06-23T15:53:35.248Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Views\\Venue\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Venue\\Create.cshtml",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Views\\Venue\\Create.cshtml",
-              "RelativeToolTip": "Views\\Venue\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Views\\Event\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Event\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Views\\Event\\Index.cshtml",
+              "RelativeToolTip": "Views\\Event\\Index.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAADwvzoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-12T22:28:00.067Z"
+              "WhenOpened": "2025-06-23T00:52:26.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VenueBookingDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Models\\VenueBookingDBContext.cs",
+              "RelativeDocumentMoniker": "Models\\VenueBookingDBContext.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Models\\VenueBookingDBContext.cs",
+              "RelativeToolTip": "Models\\VenueBookingDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T23:43:12.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EventType.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Models\\EventType.cs",
+              "RelativeDocumentMoniker": "Models\\EventType.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Models\\EventType.cs",
+              "RelativeToolTip": "Models\\EventType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T23:40:17.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Views\\Event\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Event\\Create.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Views\\Event\\Create.cshtml",
+              "RelativeToolTip": "Views\\Event\\Create.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAqwDYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-22T23:29:36.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Views\\Event\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Event\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Views\\Event\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Event\\Edit.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-22T23:24:48.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "Models\\Event.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Models\\Event.cs",
+              "RelativeToolTip": "Models\\Event.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T23:14:48.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EventController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Controllers\\EventController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EventController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-GroveByron\\EventEaseVenueBookingApp\\Controllers\\EventController.cs",
+              "RelativeToolTip": "Controllers\\EventController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwDwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T11:40:55.128Z"
             }
           ]
         }

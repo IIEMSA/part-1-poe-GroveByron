@@ -69,8 +69,8 @@ namespace EventEaseVenueBookingApp.Controllers
 
         private async Task<string> UploadImageToBlobAsync(IFormFile imageFile)
         {
-            
 
+            
 
             var blobServiceClient = new BlobServiceClient(connectionString);
             var containerClient = blobServiceClient.GetBlobContainerClient(containerName);

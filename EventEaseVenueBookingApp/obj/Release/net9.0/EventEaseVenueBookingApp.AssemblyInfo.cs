@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EventEaseVenueBookingApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcb5168f6f445326cd887013bd0bbc15ef6f3085")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+111dcbd17940483f7b792a79a43ad6f700c7657e")]
 [assembly: System.Reflection.AssemblyProductAttribute("EventEaseVenueBookingApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EventEaseVenueBookingApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
