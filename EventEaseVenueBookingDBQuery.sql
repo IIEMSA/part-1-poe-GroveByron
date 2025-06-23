@@ -7,7 +7,7 @@ CREATE TABLE Venue (
     ImageURL NVARCHAR(255) NOT NULL
 );
 
--- CREATE EVENT TYPE TABLE (must be created before Event since it is referenced)
+-- CREATE EVENT TYPE TABLE 
 CREATE TABLE EventType (
     EventTypeID INT IDENTITY (1,1) PRIMARY KEY,
     Name NVARCHAR(100) NOT NULL
@@ -54,7 +54,6 @@ VALUES
 ('Concert');
 
 -- INSERT SAMPLE DATA FOR EVENT
--- Assuming EventTypeID 1 to 4 exist (as inserted above)
 INSERT INTO Event (EventName, EventDate, EventEndDate, EventDescription, VenueID, EventTypeID)
 VALUES 
 ('Golden Hour', '2025-01-15', '2025-01-16', 'Golden Decorations with a twist of white confetti.', 1, 2),
